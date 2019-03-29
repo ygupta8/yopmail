@@ -5,7 +5,7 @@ test('mails', t => {
     t.plan(1);
     yopmail('dio')
         .then(({mails}) => {
-            t.equal(mails.length > 0, true);
+            t.equals(mails.length > 0, true);
         })
         .catch((err) => {
             // break!
